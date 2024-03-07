@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Авторизация </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <form action="https://httpbin.org/post" method="post">
+            <div class="title">Логин</div>
+            <div class="input-box underline">
+                <input type="text" id="login" name="login" placeholder="Имя пользователя" required>
+                <div class="underline"></div>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="password" placeholder="Пароль" required>
+                <div class="underline"></div>
+            </div>
+            <div class="remember-me">
+                <label><input type="checkbox" name="agree" id="agree">Запомнить меня</label>
+            </div>
+            <div class="input-box button">
+                <input type="submit" name="submit" value="Войти">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
